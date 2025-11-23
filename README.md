@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# 🍿 usePopcorn
+A movie discovery and rating web application where users can search films, view details, rate movies, and maintain a watched list — built with React, reusable components, and custom hooks.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+### 🚀 Live Demo  
+👉 https://usepopcorn-site.vercel.app/
 
-In the project directory, you can run:
+---
 
-### `npm start`
+### 🧩 Features  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🔍 **Search for movies** using the OMDb API  
+- 🎬 **View full movie details** — plot, actors, director, genre, and runtime  
+- ⭐ **Rate movies** using a custom star rating component  
+- 📁 **Add movies to a watched list** with your own rating  
+- 🗑️ **Remove movies** from your watched list  
+- 📊 **Watched summary**:  
+  - Average IMDb rating  
+  - Average user rating  
+  - Average runtime  
+- 💾 **LocalStorage persistence** for watched movies  
+- ⌨️ **Keyboard shortcuts**  
+  - *Enter* → focus the search bar  
+  - *Escape* → close movie details  
+- 📦 **Collapsible UI panels** for search results and watched movies  
+- ⚡ Fast, reactive UI built with modern React hooks  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+### 🧠 What I Learned  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Building **React components** and structuring a full UI  
+- Creating **custom hooks** to organize logic:
+  - `useMovies` → fetch & manage movie data  
+  - `useLocalStorageState` → persistent state synced with LocalStorage  
+  - `useKey` → reusable keyboard event listener logic  
+- Handling UI logic with `useState`, derived state, and event handlers  
+- Using `useEffect` for:
+  - Fetching API data  
+  - Updating `document.title`  
+  - Syncing UI with state changes  
+- Using `useRef` to:
+  - Track rating decision counts  
+  - Manage input focus  
+- Fetching movie details via the OMDb API  
+- Conditional rendering & handling loading/error states  
+- Improving UX with clean component composition  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🛠️ Tech Stack  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React (Hooks: useState, useEffect, useRef)**  
+- **Custom React Hooks**  
+- **JavaScript (ES6+)**  
+- **HTML5 / CSS3**  
+- **OMDb API**  
+- **LocalStorage API**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
