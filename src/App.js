@@ -55,11 +55,11 @@ function Main({ children }) {
   return <main className="main">{children}</main>;
 }
 
-function Box({ children }) {
+function Box({ children, className }) {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <div className="box">
+    <div className={`box ${className}`}>
       <button className="btn-toggle" onClick={() => setIsOpen((open) => !open)}>
         {isOpen ? "–" : "+"}
       </button>
@@ -336,7 +336,7 @@ export default function App() {
         <NumResults movies={movies} />
       </NavBar>
       <Main>
-        <Box>
+        <Box className="search-box">
           {/* {isLoading ? <Loader /> : <MovieList movies={movies} />} */}
           {isLoading && <Loader />}
           {!isLoading && !error && (
@@ -344,7 +344,7 @@ export default function App() {
           )}
           {error && <ErrorMessage message={error} />}
         </Box>
-        <Box>
+        <Box className="watched-box">
           {selectedId ? (
             <MovieDetails
               selectedId={selectedId}

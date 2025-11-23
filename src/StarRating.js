@@ -3,11 +3,12 @@ import { useState } from "react";
 const containerStyle = {
   display: "flex",
   alignItems: "center",
-  gap: "16px",
+  justifyContent: "center",
 };
 
 const starContaierStyle = {
   display: "flex",
+  flexWrap: "wrap",
 };
 
 export default function StarRating({
